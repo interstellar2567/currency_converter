@@ -1,0 +1,93 @@
+/* Global Reset and Base Styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(135deg, #3a0ca3, #720026, #b5179e);
+    font-family: 'Quicksand', sans-serif;
+    color: #f3e8ff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Container Styling */
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px 0 rgba(138, 43, 226, 0.4);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 40px 30px;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Heading */
+.container h1 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #e0c3fc;
+}
+
+/* Currency Container Layout */
+.currency-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+/* Select Dropdown */
+.currency-container select {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: #d3bffa;
+    color: #3a0ca3;
+    font-weight: 700;
+    transition: 0.3s;
+    box-shadow: 0 2px 5px rgba(58, 12, 163, 0.3);
+}
+
+.currency-container select:hover {
+    background-color: #c59ffc;
+    cursor: pointer;
+}
+
+/* Input Field */
+.currency-container input {
+    border: none;
+    background: transparent;
+    font-size: 24px;
+    text-align: right;
+    color: #f3e8ff;
+    border-bottom: 2px solid #d3bffa;
+    width: 100px;
+    transition: 0.3s;
+}
+
+.currency-container input:focus {
+    border-color: #9d50bb;
+}
+
+/* Exchange Rate Text */
+.exchange-rate {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+    color: #e0c3fccc;
+}
+
+/* Focus Styles */
+select:focus,
+input:focus {
+    outline: none;
+}
